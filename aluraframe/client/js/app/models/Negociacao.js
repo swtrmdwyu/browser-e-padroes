@@ -2,7 +2,8 @@ class Negociacao {
     constructor(data, quantidade, valor) {
         this._data = data,
         this._quantidade = quantidade,
-        this._valor = valor
+        this._valor = valor,
+        Object.freeze(this) //não deixa as propriedades serem alteradas.
         //this.volume = this.valor * this.quantidade
     }
 
