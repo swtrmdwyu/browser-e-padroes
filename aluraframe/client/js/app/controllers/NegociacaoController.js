@@ -4,13 +4,13 @@ class NegociacaoController {
     constructor() {
         let $ = document.querySelector.bind(document); //bind fixa o contexto da função para document no querySelector.
 
-        this.inputData = $('#data');
-        this.inputQuantidade = $('#quantidade');
-        this.inputValor = $('#valor'); 
+        this._inputValorinputData = $('#data');
+        this._inputValorinputQuantidade = $('#quantidade');
+        this._inputValorinputValor = $('#valor'); 
     }
 
     adiciona(event) {
         event.preventDefault();  
-        console.log(this.inputData);
+        console.log(this._inputValorinputData);
     }
 }
