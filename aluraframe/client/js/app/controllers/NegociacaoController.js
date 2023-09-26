@@ -1,13 +1,16 @@
 class NegociacaoController {
-    adiciona(event) {
-        event.preventDefault();
-         
+
+    // Ao adicionar como propriedades do constructor é buscado o elemento apenas uma vez no DOM.
+    constructor() {
         let $ = document.querySelector.bind(document); //bind fixa o contexto da função para document no querySelector.
 
-        let inputData = $('#data');
-        let inputQuantidade = $('#quantidade');
-        let inputValor = $('#valor'); 
+        this.inputData = $('#data');
+        this.inputQuantidade = $('#quantidade');
+        this.inputValor = $('#valor'); 
+    }
 
-        console.log(inputData);
+    adiciona(event) {
+        event.preventDefault();  
+        console.log(this.inputData);
     }
 }
