@@ -10,15 +10,15 @@ class Negociacao {
         return this._quantidade * this.valor;
     }
 
-    getData() {
+    get data() {
         return this._data;
     }
     
-    getQuantidade() {
+    get quantidade() {
         return this._quantidade;
     }
     
-    getValor() {
+    get valor() {
         return this._valor;
     }
 }
