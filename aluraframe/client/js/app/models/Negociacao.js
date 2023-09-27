@@ -3,8 +3,9 @@ class Negociacao {
         this._data = new Date(data.getTime());
         this._quantidade = quantidade;
         this._valor = valor;
+        // this._volume = this.valor * this.quantidade
         Object.freeze(this); //não deixa as propriedades serem alteradas.
-        //this.volume = this.valor * this.quantidade
+        
     }
 
     bringVolume() {
@@ -21,5 +22,8 @@ class Negociacao {
     
     get valor() {
         return this._valor;
+    }
+    get volume() {
+        return this.bringVolume();
     }
 }
