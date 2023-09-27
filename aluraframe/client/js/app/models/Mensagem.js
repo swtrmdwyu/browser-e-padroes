@@ -15,5 +15,3 @@ class Mensagem {
         this._texto = texto;
     }
 }
-
-let mensagem = new Mensagem();
